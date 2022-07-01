@@ -52,9 +52,12 @@ sudo chmod -R 775 /opt/sonatype-work
 ```sh
 vi /opt/nexus/bin/nexus.rc
 ```
-
+START NEXUS
+   sh /opt/nexus/bin/nexus start
+   sh /opt/nexus/bin/nexus status
+   
 ##  CONFIGURE NEXUS TO RUN AS A SERVICE 
-```sh
+    
 sudo ln -s /opt/nexus/bin/nexus /etc/init.d/nexus
 
 #9 Enable and start the nexus services
